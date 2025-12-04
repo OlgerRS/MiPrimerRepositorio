@@ -1,11 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practicas Html</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Documento HTML5</title>
 </head>
 <body>
-    <h1>Practicas Inicio de Html5</h1>
+  <h1>Bienvenido</h1>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPeeEv9opKNCcl7Dk94hudl_pYdeefEp_Cyw&s" 
+    alt="Descripcion imagen">
+  <p>Este es un documento HTML5 básico.</p>
+  <header>
+    <h1>Mi Sitio</h1>
+    <nav>
+        <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+  </header>
+
+<main>
+
+  <section id="inicio">
+    <h2>Inicio</h2>
+    <p>Introducción a mi sitio.</p>
+  </section>
+
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <article>
+      <h3>Desarrollo web</h3>
+      <p>Creación de sitios modernos con HTML5, CSS y JS.</p>
+    </article>
+    <table>
+            <caption>Precios</caption>
+            <thead>
+                <tr><th>Plan</th><th>Precio</th><th>Soporte</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Básico</td><td>$9</td><td>Limitado</td></tr>
+                <tr><td>Pro</td><td>$29</td><td>Completo</td></tr>
+            </tbody>
+    </table>
+    
+    <section aria-labelledby="caracteristicas">
+    <h2 id="caracteristicas">Características</h2>
+    <ul>
+        <li>Rápido</li>
+        <li>Accesible</li>
+        <li>Compatible con navegadores modernos</li>
+    </ul>
+    </section>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <form>
+      <label for="nombre">Nombre</label>
+      <input id="nombre" name="nombre" type="text" />
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 Mi Sitio</p>
+</footer>
 </body>
 </html>
